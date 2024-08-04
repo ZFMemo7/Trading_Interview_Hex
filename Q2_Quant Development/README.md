@@ -18,7 +18,7 @@ Build a buy-order and sell-order dictionary of priority queues. The keys are the
 * Retrieval of highest element (e.g., highest price) is O(1) time
 * Extracting top 5 elements is O(5logN), if I’m re-updating / reheaping the node, otherwise it is O(n) for just finding the top 5 elements
 2. Space Complexity
-* Heap storage is O(N), where is the number of top levels maintained (at least 5)
+* Heap storage is O(N), where N is the number of top levels maintained (at least 5)
 
 The reason for using heaps is due to the nature of the orderbook. Speed is critical for quick insertion and retrieval for high frequency data and data analysis. O(logN) represents the best achievable time over O(1), so insertion is extremely efficient. Furthermore, retrieval of the best bid/ask prices comes at O(1) time, and if I wanted to find and maintain the top prices, I would be equally as quick with ~O(logN) time. In crypto, where my prices are in the decimals places, I could be expecting ~thousand prices every second / minute, so logN converges to a much lower value than its other data structure counterparts at O(N). 
 
