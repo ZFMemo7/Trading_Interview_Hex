@@ -1,4 +1,6 @@
-# Trading_Hex
-Part of Hex Trust's Coding Assignment. Did Q2: Quantiative Development and Q3: Trading.
+# Trading_Hex Assessment
+Part of Hex Trust's Coding Assignment. The exact questions are in their respective folders. Chose two questions out of three. Q2: Quantitative Development and Q3: Trading.
 
-In particular, Q2 is a technical write-up given some time and experiential constraints on my end, however, Q3 was done fully and with far greater depth, given my experience in products related to currencies and interest-rates 
+Specifically, Q2 is a technical write-up given some time and experiential constraints on my end, however, Q3 was done fully and with far greater depth, given my experience in products related to currencies and interest-rates.
+
+Passed the assessment, two rounds of interview, and got the offer. Primarily worked on quantitative development.
