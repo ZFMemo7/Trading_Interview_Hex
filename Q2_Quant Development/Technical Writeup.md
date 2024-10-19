@@ -1,12 +1,18 @@
 # Introduction
 I do not possess the experience to completely deploy this within a very short weekend time-frame, and hence I have conducted research and written my approach given my available technical knowledge, interpretation, and experience. 
 
-Steps to answer this question:
+# Task:
+Design and implement a client that uses a WebSocket to stream orderbook data from an
+exchange of your choice.
 
-1. connect to Binance exchange API to stream orderbook data, WebSocket streams from endpoint “wss://stream.binance.com:9443”
-2. Use asynchronous processes (e.g., asyncio in python) to handle the orderbook data and update the local orderbook
-3. Design reconnection logic and error handling protocols to check whether there is an error in streaming data and ensure there is a local, secondary orderbook data backup
-4. Identify the AWS region that is closest to the exchange’s matching engine, and test for latency through “pings” or AWS’s own latency engine
+### Requirements:
+1. The orderbook must be stored in memory (at least 5 levels).
+2. Justify your choice of the data structure used to store the orderbook data.
+3. Updating the local version of the orderbook must be done asynchronously.
+4. The code design must be fail-safe such that the flow of the main application is not
+interrupted even if the exchange’s server goes down.
+5. Find the AWS instance that has the lowest latency with the server where the exchange’s
+matching engine resides. Explain your approach.
 
 # Answers
 
